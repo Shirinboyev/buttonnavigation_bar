@@ -1,7 +1,4 @@
   import 'package:flutter/material.dart';
-  Widget three(ind){
-    if(ind == 2){
+  Widget two(ind){
       return Center(child: Image.asset('images/profil.png'));
     } 
-    return Icon(Icons.face);
-    }

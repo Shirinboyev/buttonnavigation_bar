@@ -1,6 +1,6 @@
-  import 'package:buttonnavigation_bar/1.dart';
-import 'package:buttonnavigation_bar/2.dart';
-import 'package:buttonnavigation_bar/3.dart';
+import 'package:buttonnavigation_bar/page/1.dart';
+import 'package:buttonnavigation_bar/page/2.dart';
+import 'package:buttonnavigation_bar/page/3.dart';
 import 'package:flutter/material.dart';
   Widget add(ind){
     if(ind == 0){
