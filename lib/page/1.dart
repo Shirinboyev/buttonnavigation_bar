@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+
+class One extends StatefulWidget {
+  const One({super.key});
+
+  @override
+  State<One> createState() => _OneState();
+}
   Widget one(ind){
       return SingleChildScrollView(
         child: Column(
@@ -60,7 +67,7 @@ import 'package:flutter/material.dart';
                     Text('15:25'),
                   ],
                 ),
-                subtitle: Text('Salom Qalesan'),
+                subtitle: Text('Qayerdasiz ?'),
               ),
             ),     Padding(
               padding: const EdgeInsets.all(8.0),
@@ -121,3 +128,10 @@ import 'package:flutter/material.dart';
         ),
       );
     }
+
+class _OneState extends State<One> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
