@@ -14,9 +14,9 @@ class _GetState extends State<Get> {
       body: add(ind),
         bottomNavigationBar: BottomNavigationBar(
             items: [
-              BottomNavigationBarItem(icon: Icon(Icons.home),label: 'home'),
-              BottomNavigationBarItem(icon: Icon(Icons.settings),label: 'settings'),
-              BottomNavigationBarItem(icon: Icon(Icons.list),label: 'List'),
+              BottomNavigationBarItem(icon: Icon(Icons.replay_outlined),label: 'Suxbatlar'),
+              // BottomNavigationBarItem(icon: Icon(Icons.replay_outlined),label: 'Oxirgilar'),
+              BottomNavigationBarItem(icon: Icon(Icons.contact_page),label: 'Kontaktlar'),
             ],
           currentIndex: ind,
           onTap: (index) {
