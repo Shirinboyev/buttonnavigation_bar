@@ -1,12 +1,14 @@
-import 'package:flutter/material.dart';
 
+import 'package:buttonnavigation_bar/screens.dart/secondPage.dart';
+import 'package:flutter/material.dart';
+import 'package:buttonnavigation_bar/screens.dart/firstPage.dart';
 class One extends StatefulWidget {
   const One({super.key});
 
   @override
   State<One> createState() => _OneState();
 }
-  Widget one(ind){
+  Widget one(ind,context){
       return SingleChildScrollView(
         child: Column(
           children: [
@@ -41,6 +43,7 @@ class One extends StatefulWidget {
                 ),
                 tileColor: Colors.white,
                 onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>firstPage()));
                 },
                 leading: CircleAvatar(backgroundColor: Colors.red,child: Text('N',style: TextStyle(fontSize: 24),),),
                 title: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,6 +62,8 @@ class One extends StatefulWidget {
                 ),
                 tileColor: Colors.white,
                 onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondPage()));
+
                 },
                 leading: CircleAvatar(backgroundColor: Colors.orange,child: Text('O',style: TextStyle(fontSize: 24),),),
                 title: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -106,6 +111,24 @@ class One extends StatefulWidget {
                 subtitle: Text('Assalomu Alaykum'),
               ),
             ),     Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ListTile(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(30))
+                ),
+                tileColor: Colors.white,
+                onTap: () {
+                },
+                leading: CircleAvatar(backgroundColor: Colors.red,child: Text('I',style: TextStyle(fontSize: 24),),),
+                title: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text('Islom'),
+                    Text('07:34'),
+                  ],
+                ),
+                subtitle: Text('Qalesan yaxshimisan'),
+              ),
+            ),Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
                 shape: RoundedRectangleBorder(

@@ -11,7 +11,7 @@ class _GetState extends State<Get> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: add(ind),
+      body: add(ind,context),
         bottomNavigationBar: BottomNavigationBar(
             items: [
               BottomNavigationBarItem(icon: Icon(Icons.replay_outlined),label: 'Suxbatlar'),
